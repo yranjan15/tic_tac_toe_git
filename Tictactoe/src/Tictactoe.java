@@ -32,6 +32,10 @@ public class Tictactoe {
 		
 		player2 = new Player(symbol);
 		game = new Board();
+		
+		System.out.println("Player 1 Symbol: " + player1.getSymbol());
+		System.out.println("Player 2 Symbol: " + player2.getSymbol());
+		
 		game.printBoard();
 		while((Board.move_counter < 5) || !game.checkWin())
 		{
